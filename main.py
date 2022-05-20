@@ -3,7 +3,7 @@ import numpy as np
 import math
 import tkinter.messagebox
 root = Tk()         #窗口名称
-root.title("憨憨制作的三子棋")
+root.title("三子棋")
 f1=Frame(root)
 f1.pack()
 w1 = Canvas(f1, width=580,height=580,background='lightcyan')
