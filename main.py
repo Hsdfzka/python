@@ -3,7 +3,7 @@ import numpy as np
 import math
 import tkinter.messagebox
 root = Tk()         #窗口名称
-root.title("憨憨制作的三子棋")
+root.title("井桁将棋")
 f1=Frame(root)
 f1.pack()
 w1 = Canvas(f1, width=580,height=580,background='lightcyan')
@@ -43,14 +43,14 @@ def dawn(event):
             A[2][
                 2] == 2 or \
             A[0][0] == A[1][1] == A[2][2] == 2 or A[2][0] == A[1][1] == A[0][2] == 2:
-        tkinter.messagebox.showinfo('消息提示', '圆圈获胜')
+        tkinter.messagebox.showinfo('消息提示', 'o勝ち')
     elif A[0][0] == A[0][1] == A[0][2] == 1 or A[1][0] == A[1][1] == A[1][2] == 1 or A[2][0] == A[2][1] == A[2][
         2] == 1 or \
             A[0][0] == A[1][0] == A[2][0] == 1 or A[0][1] == A[1][1] == A[2][1] == 1 or A[0][2] == A[1][2] == \
             A[2][
                 2] == 1 or \
             A[0][0] == A[1][1] == A[2][2] == 1 or A[2][0] == A[1][1] == A[0][2] == 1:
-        tkinter.messagebox.showinfo('消息提示', '叉号获胜')
+        tkinter.messagebox.showinfo('消息提示', 'x勝ち')
 w1.bind("<Button -1>", dawn)
 def quit():
     root.quit()
